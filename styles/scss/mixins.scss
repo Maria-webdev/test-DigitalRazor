@@ -1,0 +1,11 @@
+@mixin desktop {
+	@media (min-width: (1478px)) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (max-width: (1477px)) {
+		@content;
+	}
+}
