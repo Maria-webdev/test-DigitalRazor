@@ -40,6 +40,8 @@
 	&__img {
 		background: radial-gradient(100%, #fff); //???
 		margin-bottom: 21px;
+		width: calc(100% - 24px * 2);
+		box-sizing: border-box;
 	}
 
 	&__name {

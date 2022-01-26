@@ -12,7 +12,7 @@
 		}
 
 		.header__nav-top & {
-			color: #b3bfcd; //не меняет цвет
+			color: $color_grey; //не меняет цвет
 		}
 	}
 
@@ -86,7 +86,7 @@
 		font-style: normal;
 		font-size: 20px;
 		line-height: 28px;
-		color: $color2;
+		color: $color_grey;
 	}
 
 	&__location-img {

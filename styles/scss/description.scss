@@ -5,6 +5,10 @@
 	align-items: center;
 	text-transform: uppercase;
 
+	@include tablet {
+		padding: 0px 20px 60px;
+	}
+
 	@include mobile {
 		padding-bottom: 40px;
 	}
