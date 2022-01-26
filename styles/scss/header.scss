@@ -28,7 +28,7 @@
 		justify-content: space-between;
 		border-bottom: 2px solid #b3bfcd;
 
-		@include mobile {
+		@include tablet {
 			display: none;
 		}
 	}
@@ -66,7 +66,7 @@
 		align-items: center;
 		padding: 24px 19px 26px 24px;
 
-		@include mobile {
+		@include tablet {
 			display: none;
 		}
 	}
@@ -160,6 +160,7 @@
 		.header__mobile & {
 			width: 44px;
 			height: 44px;
+			margin-right: 0px;
 		}
 	}
 
@@ -193,7 +194,7 @@
 		justify-content: space-between;
 		display: none;
 
-		@include mobile {
+		@include tablet {
 			display: flex;
 		}
 	}
