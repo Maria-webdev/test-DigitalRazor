@@ -13,3 +13,20 @@ $color_grey: #b3bfcd;
 	opacity: 0.8;
 	cursor: pointer;
 }
+
+%btn-visible {
+	width: 38px;
+	height: 38px;
+	box-sizing: border-box;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+%btn-invisible {
+	width: 0;
+	padding: 0;
+	display: none;
+	border: none;
+	color: inherit;
+	background-color: transparent;
+}

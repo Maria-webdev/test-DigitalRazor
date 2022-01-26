@@ -2,20 +2,6 @@
 	width: 100%;
 	display: block;
 
-	a {
-		text-decoration: none;
-		color: $main-color;
-		@extend %transition;
-
-		&:hover {
-			@extend %hover;
-		}
-
-		.header__nav-top & {
-			color: $color_grey; //не меняет цвет
-		}
-	}
-
 	ul {
 		list-style-type: none;
 	}
@@ -207,6 +193,20 @@
 
 		&:hover {
 			@extend %hover;
+		}
+	}
+
+	a {
+		text-decoration: none;
+		color: $main-color;
+		@extend %transition;
+
+		&:hover {
+			@extend %hover;
+		}
+
+		.header__nav-top & {
+			color: $color_grey; //не меняет цвет
 		}
 	}
 }
