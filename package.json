@@ -1,27 +1,30 @@
 {
   "name": "test-digitalrazor",
   "version": "1.0.0",
-  "description": "тестовое задание, [макет](https://www.figma.com/file/l24KJfdTQZfA8E0K1kQw7h/testWork?node-id=672%3A1720)",
+  "description": "тестовое задание",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Maria-webdev/test-DigitalRazor.git"
+    "url": "git+https://github.com/Maria-webdev/test-digitalrazor.git"
   },
   "author": "AverinaM",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Maria-webdev/test-DigitalRazor/issues"
+    "url": "https://github.com/Maria-webdev/test-digitalrazor.git"
   },
-  "homepage": "https://github.com/Maria-webdev/test-DigitalRazor#readme",
+  "homepage": "https://github.com/Maria-webdev/test-digitalrazor.git#readme",
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
     "babel-loader": "^8.2.3",
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.5.1",
+    "gh-pages": "^3.2.3",
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.5.3",
