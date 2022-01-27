@@ -17,10 +17,6 @@
 		@include tablet {
 			display: none;
 		}
-
-		a & {
-			color: $color_grey !important; //не меняет цвет
-		}
 	}
 
 	&__links {
@@ -38,7 +34,6 @@
 	&__link {
 		.header__nav-top & {
 			margin-right: 32px;
-			color: $color_grey !important; //не меняет цвет
 		}
 
 		.header__nav-bottom & {
@@ -49,6 +44,20 @@
 
 		&:last-of-type {
 			margin-right: 0;
+		}
+	}
+
+	&__child {
+		text-decoration: none;
+		color: $color_grey;
+		@extend %transition;
+
+		&:hover {
+			@extend %hover;
+		}
+
+		.header__nav-bottom & {
+			color: $main-color;
 		}
 	}
 
@@ -200,22 +209,5 @@
 			@extend %hover;
 		}
 	}
-
-	a {
-		text-decoration: none;
-		color: $main-color;
-		@extend %transition;
-
-		&:hover {
-			@extend %hover;
-		}
-
-		.header__nav-top & {
-			color: $color_grey !important; //не меняет цвет
-		}
-	}
-
-	color: $color_grey !important;
 }
-
 //TODO:изменить цвет ссылок
