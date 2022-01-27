@@ -124,10 +124,10 @@
 	@extend %btn-invisible;
 	border: 1px solid red;
 
-	// @include phablet {
-	// 	display: block;
-	// 	background-image: url(../../images/main/product-list/arrow_next.svg);
-	// 	@extend %transition;
-	// 	@extend %btn-visible;
-	// }
+	@include phablet {
+		display: block;
+		background-image: url(../../images/main/product-list/arrow_next.svg);
+		@extend %transition;
+		@extend %btn-visible;
+	}
 }
