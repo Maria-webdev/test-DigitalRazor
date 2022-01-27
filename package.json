@@ -18,7 +18,7 @@
   "bugs": {
     "url": "https://github.com/Maria-webdev/test-digitalrazor.git"
   },
-  "homepage": "https://github.com/Maria-webdev/test-digitalrazor.git#readme",
+  "homepage": "https://maria-webdev.github.io/test-digitalrazor/",
   "devDependencies": {
     "@babel/core": "^7.16.12",
     "@babel/preset-env": "^7.16.11",
