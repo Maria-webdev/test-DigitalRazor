@@ -10,7 +10,7 @@
 	}
 }
 
-@mixin mixed {
+@mixin phablet {
 	@media (max-width: (1073px)) {
 		@content;
 	}

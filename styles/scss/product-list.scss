@@ -32,7 +32,7 @@
 	grid-template-columns: repeat(auto-fit, minmax(427px, 1fr));
 	gap: 80px;
 
-	@include mixed {
+	@include phablet {
 		max-height: 379px;
 		margin: 0 auto;
 		padding: 0;
@@ -54,7 +54,7 @@
 	box-shadow: 0 0 15px rgba(212, 60, 56, 0.5);
 	padding: 30px 24px 40px;
 
-	@include mixed {
+	@include phablet {
 		max-width: calc(100% - 100 * 2);
 	}
 
@@ -102,7 +102,7 @@
 		margin-left: 15px;
 		color: $main-color;
 		box-sizing: border-box;
-		background-image: url(./images/main/product-list/details.svg);
+		background-image: url(../../images/main/product-list/details.svg);
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
@@ -112,11 +112,11 @@
 	@extend %btn-invisible;
 	border: 1px solid red;
 
-	@include mixed {
+	@include phablet {
 		display: block;
 		background-image: url(../../images/main/product-list/arrow_previos.svg);
-		@extend %transition;
-		@extend %btn-visible;
+		// 	@extend %transition;
+		// 	@extend %btn-visible;
 	}
 }
 
@@ -124,10 +124,10 @@
 	@extend %btn-invisible;
 	border: 1px solid red;
 
-	@include mixed {
-		display: block;
-		background-image: url(../../images/main/product-list/arrow_next.svg);
-		@extend %transition;
-		@extend %btn-visible;
-	}
+	// @include phablet {
+	// 	display: block;
+	// 	background-image: url(../../images/main/product-list/arrow_next.svg);
+	// 	@extend %transition;
+	// 	@extend %btn-visible;
+	// }
 }
