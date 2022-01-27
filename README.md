@@ -9,6 +9,9 @@ HTML + SCSS + JS + Webpack
 ## Для сборки на локальном ПК:
 
 git clone https://github.com/Maria-webdev/test-digitalrazor.git
+
 npm install
+
 npm run build
+
 npm run dev
