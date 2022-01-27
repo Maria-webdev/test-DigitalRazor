@@ -121,6 +121,9 @@
 
 		&:hover {
 			@extend %hover;
+			@include mobile {
+				pointer-events: none;
+			}
 		}
 	}
 
@@ -132,6 +135,9 @@
 
 		&:hover {
 			@extend %hover;
+			@include mobile {
+				pointer-events: none;
+			}
 		}
 
 		.header__mobile & {
@@ -155,6 +161,9 @@
 
 		&:hover {
 			@extend %hover;
+			@include mobile {
+				pointer-events: none;
+			}
 		}
 
 		.header__mobile & {
@@ -207,7 +216,9 @@
 
 		&:hover {
 			@extend %hover;
+			@include mobile {
+				pointer-events: none;
+			}
 		}
 	}
 }
-//TODO:изменить цвет ссылок

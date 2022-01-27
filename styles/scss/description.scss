@@ -24,6 +24,9 @@
 
 		&:hover {
 			@extend %hover;
+			@include mobile {
+				pointer-events: none;
+			}
 		}
 
 		@include mobile {
