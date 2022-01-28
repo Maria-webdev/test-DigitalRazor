@@ -104,7 +104,6 @@
 		margin: 0 auto 21px;
 		max-width: 80%;
 		height: auto;
-		border-radius: 20px;
 		display: flex;
 
 		@include phablet {
@@ -122,6 +121,12 @@
 		width: 100%;
 		// background: radial-gradient(100%, #fff); //TODO
 		object-fit: contain;
+		background: radial-gradient(
+			51.84% 58.28% at 42.63% 71.6%,
+			#3a3c59 0%,
+			#0c1117 100%
+		);
+		border-radius: 27.2621px;
 	}
 
 	&__name {

@@ -19,7 +19,3 @@ npm run dev
 ### TODO
 
 добавить функционал (js) карусели на phablet
-
-### TOFIX
-
-img: градиент
