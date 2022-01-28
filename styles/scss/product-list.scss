@@ -102,30 +102,26 @@
 
 	&__wrap {
 		margin: 0 auto 21px;
-		max-width: calc(100% - 24px * 2);
+		max-width: 80%;
 		height: auto;
-		box-sizing: border-box;
-		border: none;
 		border-radius: 20px;
-		object-fit: cover;
+		display: flex;
 
 		@include phablet {
-			object-fit: cover;
 			margin-bottom: 12px;
-			max-width: 88%;
-			height: auto;
 		}
 
 		@include mobile {
-			height: 209px;
+			max-height: 209px;
 			max-width: 223px;
 		}
 	}
 
 	&__img {
+		margin: 0 auto;
 		width: 100%;
 		// background: radial-gradient(100%, #fff); //TODO
-		object-fit: cover;
+		object-fit: contain;
 	}
 
 	&__name {
