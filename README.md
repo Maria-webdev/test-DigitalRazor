@@ -22,4 +22,4 @@ npm run dev
 
 ### TOFIX
 
-img: размер, градиент
+img: градиент
