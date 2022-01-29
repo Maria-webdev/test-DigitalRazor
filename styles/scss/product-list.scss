@@ -89,12 +89,22 @@
 	padding: 30px 24px 40px;
 	margin: 0;
 	background-color: #0c1117;
+	@extend %transition;
+
+	&:hover {
+		cursor: pointer;
+		border: 2px solid $color_strawberry;
+	}
 
 	@include phablet {
 		width: 0px;
 		padding: 0px;
 		box-sizing: border-box;
 		visibility: hidden;
+	}
+
+	@include mobile {
+		pointer-events: none;
 	}
 
 	&__wrap {
@@ -197,12 +207,11 @@
 }
 
 .active {
-	border: 2px solid $color_strawberry;
-
 	@include phablet {
 		min-width: 100%;
 		visibility: visible;
 		padding: 18px 14px 22px;
+		border: 2px solid $color_strawberry;
 	}
 }
 
