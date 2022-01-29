@@ -16,6 +16,6 @@ npm run build
 
 npm run dev
 
-### TODO
+### TOFIX
 
-добавить функционал (js) карусели на phablet
+функционал (js) карусели
