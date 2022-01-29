@@ -25,7 +25,7 @@
 		text-decoration: none;
 		color: $main-color;
 		box-shadow: 0 0 5px rgba(212, 60, 56, 1);
-		border: 2px solid #d43c38;
+		border: 2px solid $color_strawberry;
 		@extend %transition;
 
 		&:hover {
@@ -195,7 +195,7 @@
 }
 
 .active {
-	border: 2px solid #d43c38;
+	border: 2px solid $color_strawberry;
 
 	@include phablet {
 		min-width: 100%;
@@ -222,6 +222,7 @@
 		background-size: contain;
 
 		&:hover {
+			opacity: 0.8;
 			cursor: pointer;
 		}
 	}
@@ -249,6 +250,7 @@
 		background-size: contain;
 
 		&:hover {
+			opacity: 0.8;
 			cursor: pointer;
 		}
 	}

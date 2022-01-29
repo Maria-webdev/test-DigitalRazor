@@ -194,6 +194,17 @@
 	}
 }
 
+a {
+	@extend %transition;
+
+	&:hover {
+		@extend %hover;
+		@include mobile {
+			pointer-events: none;
+		}
+	}
+}
+
 svg {
 	width: 40px;
 	height: 40px;
@@ -205,17 +216,6 @@ svg {
 
 	&:hover {
 		@extend %hover;
-		fill: #d43c38;
-	}
-}
-
-a {
-	@extend %transition;
-
-	&:hover {
-		@extend %hover;
-		@include mobile {
-			pointer-events: none;
-		}
+		fill: $color_strawberry;
 	}
 }
