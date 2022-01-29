@@ -52,10 +52,6 @@
 		color: $color_grey;
 		@extend %transition;
 
-		&:hover {
-			@extend %hover;
-		}
-
 		.header__nav-bottom & {
 			color: $main-color;
 		}
@@ -123,13 +119,6 @@
 		box-sizing: border-box;
 		@extend %transition;
 
-		&:hover {
-			@extend %hover;
-			@include mobile {
-				pointer-events: none;
-			}
-		}
-
 		.header__mobile & {
 			width: 40px;
 			height: 40px;
@@ -143,13 +132,6 @@
 		margin-right: 56px;
 		box-sizing: border-box;
 		@extend %transition;
-
-		&:hover {
-			@extend %hover;
-			@include mobile {
-				pointer-events: none;
-			}
-		}
 
 		.header__mobile & {
 			width: 44px;
@@ -184,13 +166,6 @@
 		height: 40px;
 		box-sizing: border-box;
 		@extend %transition;
-
-		&:hover {
-			@extend %hover;
-			@include mobile {
-				pointer-events: none;
-			}
-		}
 	}
 }
 
@@ -199,9 +174,10 @@ a {
 
 	&:hover {
 		@extend %hover;
-		@include mobile {
-			pointer-events: none;
-		}
+	}
+
+	@include mobile {
+		pointer-events: none;
 	}
 }
 
@@ -217,5 +193,9 @@ svg {
 	&:hover {
 		@extend %hover;
 		fill: $color_strawberry;
+	}
+
+	@include mobile {
+		pointer-events: none;
 	}
 }

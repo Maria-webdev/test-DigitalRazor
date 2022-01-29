@@ -30,14 +30,14 @@
 
 		&:hover {
 			@extend %hover;
-
-			@include mobile {
-				pointer-events: none;
-			}
 		}
 
 		@include phablet {
 			padding: 0 10px 0;
+		}
+
+		@include mobile {
+			pointer-events: none;
 		}
 	}
 }
@@ -159,6 +159,12 @@
 		}
 	}
 
+	&__details {
+		@include mobile {
+			pointer-events: none;
+		}
+	}
+
 	&__details-text {
 		font-size: 18px;
 		font-style: normal;
@@ -186,10 +192,6 @@
 		@include phablet {
 			width: 25px;
 			margin-left: 8.5px;
-		}
-
-		@include mobile {
-			pointer-events: none;
 		}
 	}
 }
