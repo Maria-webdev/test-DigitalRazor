@@ -74,14 +74,10 @@
 		padding: 0;
 		display: flex;
 		flex-direction: row;
-		overflow: hidden;
 		min-height: 379px;
 		transition: all ease 1s;
+		gap: 0px;
 	}
-}
-
-.active {
-	border: 2px solid #d43c38;
 }
 
 .product {
@@ -95,9 +91,10 @@
 	background-color: #0c1117;
 
 	@include phablet {
-		min-width: 100%;
-		padding: 18px 14px 22px;
+		width: 0px;
+		padding: 0px;
 		box-sizing: border-box;
+		visibility: hidden;
 	}
 
 	&__wrap {
@@ -119,7 +116,6 @@
 	&__img {
 		margin: 0 auto;
 		width: 100%;
-		// background: radial-gradient(100%, #fff); //TODO
 		object-fit: contain;
 		background: radial-gradient(
 			51.84% 58.28% at 42.63% 71.6%,
@@ -195,6 +191,16 @@
 		@include mobile {
 			pointer-events: none;
 		}
+	}
+}
+
+.active {
+	border: 2px solid #d43c38;
+
+	@include phablet {
+		min-width: 100%;
+		visibility: visible;
+		padding: 18px 14px 22px;
 	}
 }
 
