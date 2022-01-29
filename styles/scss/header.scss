@@ -95,11 +95,6 @@
 		height: 20px;
 		margin-right: 8px;
 		box-sizing: border-box;
-		@extend %transition;
-
-		&:hover {
-			@extend %hover;
-		}
 	}
 
 	&__phone {
@@ -120,14 +115,6 @@
 		height: 32px;
 		margin-right: 16px;
 		box-sizing: border-box;
-		@extend %transition;
-
-		&:hover {
-			@extend %hover;
-			@include mobile {
-				pointer-events: none;
-			}
-		}
 	}
 
 	&__profile {
@@ -219,5 +206,16 @@ svg {
 	&:hover {
 		@extend %hover;
 		fill: #d43c38;
+	}
+}
+
+a {
+	@extend %transition;
+
+	&:hover {
+		@extend %hover;
+		@include mobile {
+			pointer-events: none;
+		}
 	}
 }
