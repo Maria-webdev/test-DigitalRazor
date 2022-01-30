@@ -15,7 +15,3 @@ npm install
 npm run build
 
 npm run dev
-
-### TOFIX
-
-функционал (js) карусели
